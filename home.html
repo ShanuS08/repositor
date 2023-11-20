@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraSustain</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/c6920433d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="./pngegg.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><h2 style="color: white; font-size: 40px;">TerraSustain</h2></p>
+            <h1 style="font-size: 50px; color: white;"> Nurturing Growth Through Terrace Farming </h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="https://images.unsplash.com/photo-1563714193017-5a5fb60bc02b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""><br>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    
+Welcome to our dedicated platform for Beneficial Terrace Farming, your go-to resource for mastering the art and science of cultivating on slopes to achieve sustainable and high-yield agriculture. Our user-friendly interface provides a wealth of information, guiding you through the entire process – from constructing terraces to optimizing water usage and implementing erosion-prevention strategies. Explore our comprehensive methods to unlock the full potential of terrace farming, turning challenging landscapes into thriving, productive farmland.</p><br>
+
+                    <p>In our unwavering commitment to environmentally friendly practices, we place a strong emphasis on the use of natural pesticides for effective pest management. Discover a range of safe and sustainable alternatives that protect your crops without compromising the health of your land or the broader ecosystem. Our platform delves into the selection and application of these natural solutions, ensuring that your terrace farming endeavors not only yield bountiful harvests but also contribute to ecologically responsible agricultural practices.</p><br>
+                    <p>To further support local farmers and suppliers, our unique platform features a direct purchasing option, allowing users to buy products straight from the source. By facilitating these direct transactions, we aspire to strengthen local economies, promote sustainable agriculture, and foster a direct connection between consumers and growers. Join us on this transformative journey toward responsible terrace farming, where the acquisition of valuable knowledge goes hand in hand with making meaningful contributions to a more sustainable and interconnected agricultural community.
+                </p><br>
+                <p>
+                    As you navigate our platform, you'll find an array of resources ranging from informative articles and video tutorials to success stories from farmers who have embraced terrace farming. We strive to make learning and implementing these techniques as seamless as possible, empowering you to embark on your terrace farming journey with confidence and expertise.
+                </p><br>
+                <p>
+                    Embark on this exciting adventure with us, where Beneficial Terrace Farming becomes not just a method but a way of life, fostering a harmonious relationship between agriculture, nature, and communities. Together, let's cultivate a future that is not only abundant in harvests but also rich in sustainability, resilience, and shared prosperity.
+                </p><br>
+               </div>
+                    </div></div>
+                    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) { // Added event parameter
+        for (var i = 0; i < tablinks.length; i++) { // Used regular for loop
+            tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) { // Used regular for loop
+            tabcontents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    // JavaScript code
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
